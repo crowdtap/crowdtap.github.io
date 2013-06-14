@@ -1,0 +1,226 @@
+<html>
+  <head>
+    <title>Open Source @ Crowdtap</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+
+      @-webkit-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+      @-moz-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+      @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+      .fade-in {
+        opacity: 0;
+        -webkit-animation: fadeIn ease-in 1;
+        -moz-animation: fadeIn ease-in 1;
+        animation: fadeIn ease-in 1;
+
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-duration: .5s;
+        -moz-animation-duration: .5s;
+        animation-duration: .5s;
+      }
+
+      html, body, h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        border-top: 10px solid #eb1b0d;
+        font: 16px "Source Sans Pro", sans-serif;
+      }
+
+      .wrapper, .footer ul {
+        margin: 0 auto;
+        width: 1080px;
+      }
+
+      .header {
+        padding-top: 30px;
+      }
+
+      .clearfix:after {
+        clear: both;
+        content: "";
+        display: table;
+      }
+
+      .header .logo {
+        background: url('img/logo.png');
+        float: left;
+        height: 28px;
+        position: relative;
+        text-indent: -9999px;
+        top: 6px;
+        width: 124px;
+      }
+
+      .header .btn-primary {
+        background: #51b2ca;
+        border-radius: 3px;
+        color: #fff;
+        display: inline-block;
+        float: right;
+        padding: 10px 20px;
+        text-decoration: none;
+        -moz-transition: background 0.2s ease-in-out;
+        -o-transition: background 0.2s ease-in-out;
+        -webkit-transition: background 0.2s ease-in-out;
+        transition: background 0.2s ease-in-out;
+      }
+
+      .header .btn-primary:hover {
+        background: #459fb6;
+      }
+
+      .header .btn-primary:active {
+        position: relative;
+        top: 1px;
+      }
+
+      .hero-copy {
+        border-bottom: 1px solid #ddd;
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 1.5em;
+        margin: 80px 0 50px;
+        padding-bottom: 50px;
+      }
+
+      .single-project {
+        color: #777;
+        float: left;
+        font-size: 18px;
+        line-height: 1.5em;
+        margin: 0 60px 60px 0;
+        width: 320px;
+      }
+
+      .single-project:nth-child(3n) {
+        margin-right: 0;
+      }
+
+      .single-project .project-title {
+        color: #b82c23;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+
+      .cols {
+        border-bottom: 1px solid #ddd;
+        color: #777;
+        -moz-column-count: 2;
+        -moz-column-gap: 60px;
+        -moz-column-width: 510px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 60px;
+        -webkit-column-width: 510px;
+        column-count: 2;
+        column-gap: 60px;
+        column-width: 510px;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.5em;
+        margin: 50px 0;
+        padding-bottom: 50px;
+      }
+
+      .footer {
+        background: #222;
+        min-height: 50px;
+        padding-top: 20px;
+      }
+
+      .footer ul {
+        text-align: center;
+        padding: 0
+      }
+
+      .footer li {
+        display: inline-block;
+        width: 240px;
+      }
+
+      .footer li a {
+        color: #999;
+        text-decoration: none;
+        -moz-transition: color 0.2s ease-in-out;
+        -o-transition: color 0.2s ease-in-out;
+        -webkit-transition: color 0.2s ease-in-out;
+        transition: color 0.2s ease-in-out;
+      }
+
+      .footer li a:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
+
+    </style>
+  </head>
+  <body class="fade-in">
+    <div class="wrapper">
+      <div class="header clearfix">
+        <h1 class="logo">Crowdtap</h1>
+        <a class="btn-primary" href="http://crowdtap.com/">visit crowdtap &raquo;</a>
+      </div>
+      <div class="main">
+        <h2 class="hero-copy fade-in">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</h2>
+
+        <!-- Here is some secondary text just in case you need it. NOTE: this won't show up as columns in IE -->
+        <p class="cols">
+           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+        </p><!-- END .cols -->
+
+        <div class="projects fade-in clearfix">
+          <div class="single-project">
+            <h2 class="project-title">Gem/Project Name</h2>
+            <!-- Feel free to omit the image below -->
+            <img src="http://placehold.it/320x150/" />
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          </div><!-- END .single-project -->
+
+          <div class="single-project">
+            <h2 class="project-title">Gem/Project Name</h2>
+            <!-- Feel free to omit the image below -->
+            <img src="http://placehold.it/320x150/" />
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          </div><!-- END .single-project -->
+
+          <div class="single-project">
+            <h2 class="project-title">Gem/Project Name</h2>
+            <!-- Feel free to omit the image below -->
+            <img src="http://placehold.it/320x150/" />
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+          </div><!-- END .single-project -->
+
+          <div class="single-project">
+            <h2 class="project-title">Gem/Project Name</h2>
+            <!-- Feel free to omit the image below -->
+            <img src="http://placehold.it/320x150/" />
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          </div><!-- END .single-project -->
+
+          <div class="single-project">
+            <h2 class="project-title">Gem/Project Name</h2>
+            <!-- Feel free to omit the image below -->
+            <img src="http://placehold.it/320x150/" />
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          </div><!-- END .single-project -->
+
+        </div><!-- END .projects -->
+      </div><!-- END .main -->
+    </div><!-- END .wrapper -->
+    <div class="footer">
+      <ul>
+        <li><a href="http://crowdtap.com/pages/jobs">We're hiring</a></li>
+        <li><a href="http://blog.crowdtap.com/">Blog</a></li>
+        <li><a href="http://crowdtap.com/pages/about">About Us</a></li>
+        <li><a href="http://nytm.org/made/">Made in NYC</a></li>
+      </ul>
+    </div><!-- END .footer -->
+  </body>
+</html>
